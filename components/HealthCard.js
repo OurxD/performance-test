@@ -1,5 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-has-content, react/prop-types */
 import React from 'react';
+import PerformantImage from './PerformantImage';
+
+const imageSizes = [444];
 
 const HealthCard = ({
   title,
@@ -18,10 +21,11 @@ const HealthCard = ({
               position: 'relative',
             }}
           >
-            <img
+            <PerformantImage
               alt="Nothing to sneeze at. Get relief from seasonal allergies with Zyrtec, Flonase, and more."
-              aria-hidden="true"
-              src={image}
+              ariaHidden="true"
+              source={image}
+              sizes={imageSizes}
               className="TempoCategoryTile-img"
               style={{
                 position: 'absolute',

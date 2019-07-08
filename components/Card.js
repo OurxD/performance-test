@@ -1,5 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid, react/prop-types */
 import React from 'react';
+import PerformantImage from './PerformantImage';
+
+const imageSizes = [282];
 
 const Card = ({
   title,
@@ -12,7 +15,12 @@ const Card = ({
       width: '10rem',
     }}
   >
-    <img className="card-img-top" src={image} alt="Card cap" />
+    <PerformantImage
+      alt="Card cap"
+      className="card-img-top"
+      source={image}
+      sizes={imageSizes}
+    />
     <div className="card-body">
       <h5 className="card-title text-center">{title}</h5>
     </div>

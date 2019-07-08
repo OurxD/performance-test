@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 app.prepare()
   .then(() => {
     const server = express();
-
+    // enable text compression
     server.use(compression());
     server.get('*', (req, res) => handle(req, res));
 
