@@ -6,7 +6,9 @@ const InView = ({ children }) => {
   const inViewRef = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
+    let observer;
+
+    observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         setIsInView(true);
         observer.disconnect();
