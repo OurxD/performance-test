@@ -2,7 +2,7 @@
 import React from 'react';
 import PerformantImage from './PerformantImage';
 
-const imageSizes = [282];
+const imageSizes = [282, 400, 1000];
 
 const Card = ({
   title,

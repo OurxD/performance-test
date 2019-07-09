@@ -6,15 +6,26 @@
   "scripts": {
     "dev": "node server",
     "build": "next build",
-    "start": "NODE_ENV=production node server"
+    "start": "NODE_ENV=production node server",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "analyze": "BUNDLE_ANALYZE=browser npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/parser": "^7.5.0",
+    "@zeit/next-bundle-analyzer": "^0.1.2",
+    "@zeit/next-sass": "^1.0.1",
+    "babel-eslint": "^10.0.2",
     "compression": "^1.7.4",
+    "eslint-plugin-jest": "^22.7.2",
     "express": "^4.17.1",
+    "express-useragent": "^1.0.12",
+    "lodash": "^4.17.11",
     "next": "^8.1.0",
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
